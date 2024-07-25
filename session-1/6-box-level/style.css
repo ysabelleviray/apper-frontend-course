@@ -1,0 +1,372 @@
+:root {
+  --primary-color: #333D42;
+  --secondary-color: #0F1113;
+  --accent-color: #D93900;
+  --text-color: #687882;
+  --padding-small: 10px;
+  --padding-medium: 15px;
+  --padding-large: 20px;
+}
+
+body  {
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 100%;
+}
+
+.header {
+  padding: var(--padding-small);
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.logo-image {
+  height: 50px;
+  width:100%;
+}
+
+.searchbar {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+}
+
+.magnifying-glass-image {
+  width: 35px;
+  height: 17px;
+}
+
+.search-placeholder {
+  width: 150px;
+  height: 20px;
+  color: var(--text-color);
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  font-size: 15px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 8px;
+}
+
+.nav ul li:nth-child(1) { 
+  width: 80px;
+  height: 30px;
+  background-color: #202528;
+  color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2px;
+  font-size: 15px;
+}
+  
+.nav ul li:nth-child(2) { 
+  width: 60px;
+  height: 30px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2px;
+  font-size: 15px;
+}
+  
+.nav ul li:nth-child(3) { 
+  width: 20px;
+  height: 20px;
+  color: white;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.menu {
+  width: 20px;
+  height: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row; 
+  background-color: var(--secondary-color);
+}
+
+.sidebar {
+  flex-basis: 15%;
+  border-right: 1px solid var(--text-color);
+  padding: var(--padding-large);
+  width: 15%;
+  height: 100%;
+}
+
+.subreddit-list li {
+  background-color: var(--primary-color);
+  width: 95%;
+  height: 30px;
+}
+
+.subreddit-list ul li:nth-child(3), 
+.subreddit-list ul li:nth-child(12),
+.subreddit-list ul li:nth-child(20) { 
+  height: 0px;
+  border: 1px solid var(--text-color);
+}
+
+.home {
+  flex-basis: 85%;
+  width: 85%; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.videos {
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--padding-small);
+}
+
+.video {
+  background-color: var(--primary-color);
+  height: 75%;
+  width: 23%;
+  border-radius: 20px;
+}
+
+.post {
+  height: 67%;
+  display: flex;
+  flex-direction: row;
+}
+
+.post-list {
+  flex-basis: 80%;
+  width: 80%;
+  padding-right: var(--padding-small);
+}
+
+.community-bar {
+  flex-basis: 30%;
+  height: 100%;
+  width: 20%;
+  justify-content: center;
+  align-items: start;
+  display: flex;
+}
+
+.communities {
+  padding: var(--padding-medium);
+  background-color: black;
+  height: 55%;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.community-title {
+  background-color: var(--primary-color);
+  height: 30px;
+  width: 90%;
+  margin: 10px;
+}
+
+.communities ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  width: 90%;
+}
+
+.communities li {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.see-more {
+  background-color: var(--primary-color);
+  height: 25px;
+  width: 60px;
+}
+
+.post-header {
+  color: #fff;
+  padding-bottom: var(--padding-small);
+  padding-left: var(--padding-medium);
+  border-bottom: 1px solid var(--text-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sort-option {
+  background-color: var(--primary-color);
+  padding: var(--padding-medium);
+  margin-right: 8px;
+  width: 5%;
+}
+
+.view-option {
+  background-color: var(--primary-color);
+  padding: var(--padding-medium);
+  margin-right: 8px;
+  width: 2%;
+}
+
+.sample-post {
+  margin-top: 15px;
+  height: 80%;
+  padding: var(--padding-small);
+}
+
+.sample-post-header {
+  display: flex;
+  padding-bottom: var(--padding-medium);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.community-and-time {
+  display: flex;
+  align-items: center;
+}
+
+.community-logo {
+  background-color: var(--primary-color);
+  padding: var(--padding-medium);
+  margin-right: 8px;
+}
+
+.community-name {
+  background-color: var(--primary-color);
+  width: 100px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.time {
+  background-color: var(--primary-color);
+  width: 60px;
+  height: 30px;
+}
+
+.join-and-menu {
+  display: flex;
+  align-items: center;
+}
+
+.join {
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.menu {
+  background-color: var(--primary-color);
+  width: 30px;
+  height: 30px;
+}
+
+.post-title {
+  background-color: var(--primary-color);
+  height: 15%;
+  margin-bottom: 15px;
+}
+
+.post-image {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  height: 63%;
+}
+
+.subreddit-list {
+  margin-bottom: 20px;
+}
+
+.subreddit-list h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.subreddit-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subreddit-list li {
+  margin-bottom: 10px;
+}
+
+.subreddit-list a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.post-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  padding-top: var(--padding-medium);
+}
+
+.vote {
+  background-color: var(--primary-color);
+  padding: var(--padding-medium);
+}
+
+.comment {
+  background-color: var(--primary-color);
+  width: 100px;
+  height: 30px;
+}
+
+.badge {
+  background-color: var(--primary-color);
+  width: 60px;
+  height: 30px;
+}
+
+.share {
+  background-color: var(--primary-color);
+  width: 60px;
+  height: 30px;
+}
